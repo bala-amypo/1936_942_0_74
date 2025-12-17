@@ -1,9 +1,11 @@
 package com.example.demo.controller;
 
+
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 import com.example.demo.entity.Student;
 import com.example.demo.service.StudentService;
+
 
 @RestController
 public class StudentController{
@@ -12,6 +14,6 @@ public class StudentController{
 
     @PostMapping("/postdata")
     public Student postdata(@RequestBody Student student){
-        return studentService
+        return studentService.saveStudent(student);
     }
 }
