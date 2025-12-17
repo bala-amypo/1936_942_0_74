@@ -9,7 +9,7 @@ import jakarta.persistence.Id;
 
 public class Stuentity{
     @Id
-    @GeneratedValue(stragy=GenerationType.IDENTITY)
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id;
     private String name;
     private String email;
